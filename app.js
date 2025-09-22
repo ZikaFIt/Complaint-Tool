@@ -1515,7 +1515,7 @@ btnCreateZoho && btnCreateZoho.addEventListener('click', async ()=>{
   // تقدري هنا تعملي نفس فحوصات الإلزامية اللي بتعمليها للحفظ/النسخ
   try{
     const payload = buildZohoPayloadFromTool();
-    const resp = await fetch('/api/zoho/create-ticket', {
+    const resp = await fetch('/api/zoho-create-ticket', {
       method: 'POST',
       headers: { 'Content-Type':'application/json' },
       body: JSON.stringify(payload)
